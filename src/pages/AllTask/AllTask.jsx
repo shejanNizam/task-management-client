@@ -97,18 +97,9 @@ const AllTask = () => {
             {tasks?.map((task, index) => (
               <tr key={task._id}>
                 <td>{index + 1}</td>
-                <td>
-                  <div className="avatar">
-                    <div className="mask mask-squircle w-12 h-12">
-                      <img
-                        src={task?.image}
-                        alt="Avatar Tailwind CSS Component"
-                      />
-                    </div>
-                  </div>
-                </td>
-                <td>{task.title}</td>
-                <td className="">{task.description}</td>
+                <td>{task?.title}</td>
+                <td>{task?.description}</td>
+                <td>{task?.status}</td>
                 <td>
                   {task?.status === "updated" ? (
                     <span className="font-bold text-secondary ">Updated</span>
