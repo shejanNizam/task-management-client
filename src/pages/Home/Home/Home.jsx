@@ -1,9 +1,14 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+import Banner from "../Banner/Banner";
 
 const Home = () => {
   return (
     <div>
-      <h3>Home</h3>
+      <Helmet>
+        <title>Home | Task Management</title>
+      </Helmet>
+      <Banner />
     </div>
   );
 };
